@@ -28,7 +28,7 @@ public class Program{
                 System.err.println("IllegalArgument");
                 System.exit(-1);
             }
-            String token = sc.next();               // read "Week" or "42"
+            String token = sc.next();
             if (token.equals("42"))
                 break;
             if (!token.equalsIgnoreCase("Week") || !sc.hasNextInt())
