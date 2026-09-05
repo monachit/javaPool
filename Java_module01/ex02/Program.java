@@ -1,9 +1,10 @@
 import java.util.Scanner;
 
+import Java_module01.ex03.UserNotFoundException;
 
 public class Program {
     public static void main(String[] args) {
-        UsersList list = new UsersArrayList(); // note the type: interface on the left!
+        UsersList list = new UsersArrayList();
 
         list.addUser(new User("Alice", 1000));
         list.addUser(new User("Bob", 500));
@@ -17,7 +18,6 @@ public class Program {
         User byIndex = list.getUserByIndex(0);
         System.out.println("First in list: " + byIndex.getName());
 
-        // trigger the exception intentionally
         try {
             list.getUserById(999);
         } catch (UserNotFoundException e) {

@@ -1,10 +1,11 @@
+package Java_module01.ex03;
+
 public class User {
     int Identifier;
     String Name;
     int Balance;
 
-    public User(String name, int balance)
-    {
+    public User(String name, int balance) {
         this.Identifier = UserIdsGenerator.getInstance().generateId();
         this.Name = name;
         this.Balance = CheckPositive(balance);

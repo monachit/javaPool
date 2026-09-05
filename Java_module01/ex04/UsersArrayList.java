@@ -1,3 +1,5 @@
+package Java_module01.ex04;
+
 public class UsersArrayList implements UsersList {
     private User[] users;
     private int count;

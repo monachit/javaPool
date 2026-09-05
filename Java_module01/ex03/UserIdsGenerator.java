@@ -1,4 +1,4 @@
-import java.util.Scanner;
+package Java_module01.ex03;
 
 public class UserIdsGenerator {
 
